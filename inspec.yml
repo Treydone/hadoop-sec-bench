@@ -1,0 +1,8 @@
+name: hadoop-sec-bench
+title: Security best practices assessment, auditing, hardening and forensics readiness tool for Hadoop clusters
+maintainer: Vincent Devillers
+copyright: Layer4
+copyright_email: vdevillers76@gmail.com
+license: AGPL v3
+summary: Security best practices assessment, auditing, hardening and forensics readiness tool for Hadoop clusters
+version: 0.1.0
