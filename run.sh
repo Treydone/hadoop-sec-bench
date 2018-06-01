@@ -59,8 +59,11 @@ OPTIND=1
 edumpvar OPTIND
 
 
-
-#inspec exec hdfs -t ssh://root:password@target --attrs attributes/server-attributes.yml
 #inspec detect
+
+#inspec exec hdfs --target ssh://root:password@target --attrs attributes/hdp.yml attributes/hdfs.yml
+#inspec exec hive --target ssh://root:password@target --attrs attributes/hdp.yml attributes/hive.yml
+#inspec exec hbase --target ssh://root:password@target --attrs attributes/hdp.yml attributes/hbase.yml
+
 
 eok

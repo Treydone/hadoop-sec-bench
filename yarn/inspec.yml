@@ -1,0 +1,8 @@
+name: yarn
+title: Yarn
+maintainer: Vincent Devillers
+copyright: Layer4
+copyright_email: vincent.devillers@layer4.fr
+license: AGPL v3
+summary: Yarn
+version: 0.1.0
