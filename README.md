@@ -43,6 +43,37 @@ It covers hardening and security best practices for Hadoop clusters related to:
 - Network Security
 - Infrastructure Security & Integrity
 
+## Running
+
+Run with:
+```
+./run.sh --file mapping.json --dry --reporter json -vvvvvv
+```
+
+You need a JSON file with:
+
+```
+{
+ "host1": {"target": "ssh://root:password@host1", "components": ["hdfs-client", "hbase-client"]},
+ "host2": {"target": "ssh://root:password@host2", "components": ["hdfs-namenode", "hdfs-http", "hbase-master"]},
+ "host3": {"target": "ssh://root:password@host3", "components": ["hdfs-datanode", "hbase-regionserver"]},
+ "host4": {"target": "ssh://root:password@host4", "components": ["hdfs-secondarynamenode", "hbase-rest"]}
+}
+```
+
+```
+./run.sh -h
+run.sh [OPTION...]
+-f, --file           The json mapping file with argument (default: ./mapping.json)
+-d, --dry            Dry run (default: 0)
+-r, --reporter       InSpec reporter to use (default: cli)
+-v, --verbose        Enable verbose output (include multiple times for more
+                     verbosity, e.g. -vvv)
+```
+
+### Generating mapping file from Ambari
+
+### Generating mapping file from Cloudera Manager
 
 ## Contribute
 

@@ -1,0 +1,6 @@
+{
+ "host1": {"target": "ssh://root:password@host1", "components": ["hdfs-client", "hbase-client"]},
+ "host2": {"target": "ssh://root:password@host2", "components": ["hdfs-namenode", "hdfs-http", "hbase-master"]},
+ "host3": {"target": "ssh://root:password@host3", "components": ["hdfs-datanode", "hbase-regionserver"]},
+ "host4": {"target": "ssh://root:password@host4", "components": ["hdfs-secondarynamenode", "hbase-rest"]}
+}
